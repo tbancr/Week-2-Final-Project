@@ -454,9 +454,40 @@ img{
     margin-top:32px;
 }
 
+.values__description--header{
+    display:flex;
+    align-items:center;
+}
+
+.values__description--icon{
+    padding:8px;
+    border:0px solid;
+    border-radius:9999px;
+    text-align:center;
+}
+
+.values__description--icon-green{
+    background-color:rgb(154, 230, 180);
+}
+
+.fa-dollar-sign{
+    color:rgb(39, 103, 73);
+    width:20px;
+}
+
+.values__description--icon-red{
+    background-color:rgb(254, 178, 178);
+}
+
+.fa-briefcase{
+    color:rgb(155, 44, 44);
+    width:20px;
+}
+
 .values__description--title{
     font-weight:700;
     color:rgb(36, 62, 99);
+    margin-left:12px;
 }
 
 .values__description--para{
@@ -496,4 +527,122 @@ img{
 .values__image{
     width:100%;
     height:auto;
+}
+
+/* PRICING */
+
+.pricing__description{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.pricing__description--header{
+    font-weight:900;
+    color:rgb(36, 62, 99);
+    margin-top:16px;
+}
+
+.pricing__description--para{
+    color:rgb(113, 128, 150);
+    line-height:26px;
+    margin-top:16px;
+    font-size:18px;
+    font-weight:500;
+    max-width:576px;
+}
+
+.plans{
+    margin-top:64px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.plan{
+    width:calc(100% / 3);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.plan__purple{
+    background-color:rgb(100, 21, 255);
+    background-image:linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-radius:8px;
+}
+
+.plan__price{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:32px 0;
+}
+
+.plan__price--header{
+    color:rgb(26, 32, 44);
+    font-size:20px;
+    font-weight:700;
+}
+
+.plan__price--amount{
+    color:rgb(26, 32, 44);
+    font-size:48px;
+    font-weight:700;
+    margin:4px 0;
+}
+
+.plan__price--duration{
+    color:rgb(160, 174, 192);
+    font-weight:700;
+}
+
+.plan__price--header-white{
+    color:rgb(247, 250, 252);
+}
+
+.plan__price--amount-white{
+    color:rgb(247, 250, 252);
+}
+
+.plan__price--duration-white{
+    color:rgb(247, 250, 252);
+}
+
+.plan__description{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:32px;
+    border-top:2px solid rgb(229, 231, 235);
+    border-bottom:2px solid rgb(229, 231, 235);
+}
+
+.plan__description--type{
+    color:rgb(26, 32, 44);
+    font-size:20px;
+    font-weight:700;
+}
+
+.plan__description--details{
+    font-weight:500;
+    margin-top:20px;
+    color:rgb(113, 128, 150);
+}
+
+.plan__description--white{
+    border-top:2px solid rgb(102, 126, 234);
+    border-bottom:2px solid rgb(102, 126, 234);
+}
+
+.plan__description--type-white{
+    color:rgb(247, 250, 252);
+}
+
+.plan__description--details-white{
+    color:rgb(226, 232, 240);
+}
+
+.plan__button{
+    padding:32px 64px;
 }
