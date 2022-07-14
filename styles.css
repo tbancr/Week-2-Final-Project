@@ -557,19 +557,45 @@ img{
     margin-top:64px;
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 .plan{
     width:calc(100% / 3);
+    max-width:384px;
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-right:32px;
+    position:relative;
 }
 
 .plan__purple{
     background-color:rgb(100, 21, 255);
     background-image:linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     border-radius:8px;
+}
+
+.plan__border--top-green{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height:8px;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.plan__border--top-pink{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height:8px;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
 }
 
 .plan__price{
@@ -616,6 +642,7 @@ img{
     padding:32px;
     border-top:2px solid rgb(229, 231, 235);
     border-bottom:2px solid rgb(229, 231, 235);
+    width:100%;
 }
 
 .plan__description--type{
@@ -643,6 +670,174 @@ img{
     color:rgb(226, 232, 240);
 }
 
+.plan__button--wrapper{
+    padding:32px 16px;
+}
+
 .plan__button{
-    padding:32px 64px;
+    padding:16px 64px;
+    border:none;
+    letter-spacing:0.05em;
+    cursor:pointer;
+    transition:all 300ms ease;
+}
+
+.plan__button:hover{
+    transform: translateX(1px) translateY(-1px);
+}
+
+.personal__button{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    color:rgb(237,242,247);
+}
+
+.business__button{
+    background-color:rgb(247,250,252);
+    color:rgb(71, 15, 182);
+}
+
+.business__button:hover{
+    background-color:rgb(226, 232, 240);
+    color:rgb(70,15,179);
+}
+
+.enterprise__button{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    color:rgb(237,242,247);
+}
+
+/* TESTIMONIALS */
+
+.testimonials__row{
+    display:flex;
+}
+
+.testimonials__image--wrapper{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.testimonials__image{
+    width:100%;
+    height:auto;
+}
+
+.testimonials__text{
+    width:50%;
+    padding-left:64px;
+}
+
+.testimonials__text--header{
+    font-weight:900;
+    color:rgb(36, 62, 99);
+    margin-top:16px;
+}
+
+.testimonials__text--para{
+    margin-top:24px;
+    line-height:1.625;
+    font-weight:500;
+    color:rgb(124, 139, 161);
+}
+
+.testimonial{
+    width:100%;
+    margin-top:40px;
+}
+
+.fa-star{
+    color:rgb(246,173,85);
+}
+
+.testimonial__header{
+    margin-top:16px;
+    color:rgb(36, 62, 99);
+    font-weight:700;
+}
+
+.testimonial__para{
+    margin-top:16px;
+    margin-bottom:40px;
+    line-height:1.625;
+    color:rgb(74, 85, 104);
+    font-weight:500;
+}
+
+.testimonial__user--wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.testimonial__user{
+    display:flex;
+    align-items:center;
+}
+
+.testimonial__user--image{
+    width:80px;
+    border-radius:9999px;
+}
+
+.testimonial__user--info{
+    margin-left:24px;
+}
+
+.testimonial__user--name{
+    color:rgb(36, 62, 99);
+    font-size:20px;
+}
+
+.testimonial__user--job{
+    color:rgb(124, 139, 161);
+    font-weight:500;
+    font-size:16px;
+}
+
+.testimonial__buttons{
+    display:flex;
+}
+
+.testimonial__button--back{
+    padding:16px;
+    margin: 0 12px;
+    border-width:0;
+    border-radius:9999px;
+    transition:all 300ms ease;
+    cursor:pointer;
+}
+
+.fa-arrow-left{
+    color:rgb(100, 21, 255);
+    width:16px;
+}
+
+.testimonial__button--back:hover{
+    background-color:rgb(226, 232, 240);
+}
+
+.testimonial__button--forward{
+    padding:16px;
+    margin:0 12px;
+    border-width:0;
+    border-radius:9999px;
+    transition:all 300ms ease;
+    cursor:pointer;
+}
+
+.fa-arrow-right{
+    color:rgb(100, 21, 255);
+    width:16px;
+}
+
+.testimonial__button--forward:hover{
+    background-color:rgb(226, 232, 240);
+}
+
+.testimonial__button--divider{
+    margin:12px 0;
+    border-right:1px solid rgb(229, 231, 235);
 }
