@@ -909,11 +909,13 @@ img{
 
 .footer__container{
     background-color:rgb(100, 21, 255);
+    padding:96px 0;
 }
 
 .footer__links{
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
 }
 
 .footer__link{
@@ -922,9 +924,31 @@ img{
     width:calc(100% / 5);
 }
 
+.footer__link--header{
+    color:rgb(247, 250, 252);
+    font-weight:700;
+}
+
 .links{
     display:flex;
     flex-direction:column;
+    margin-top:24px;
+}
+
+.link__li{
+    margin-top:12px;
+}
+
+.link{
+    padding-bottom:4px;
+    color:rgb(247, 250, 252);
+    font-size:14px;
+    font-weight:500;
+    transition:all 300ms ease;
+}
+
+.link:hover{
+    border-bottom:2px solid rgb(247, 250, 252);
 }
 
 .footer__divider{
@@ -950,7 +974,45 @@ img{
     height:auto;
 }
 
+.footer__logo--header{
+    color:rgb(247, 250, 252);
+    margin-left:8px;
+    font-size:20px;
+    font-weight:900;
+}
+
+.footer__info--para{
+    color:rgb(203, 213, 224);
+    font-size:16px;
+    font-weight:500;
+}
+
+.footer__social--link{
+    background-color:rgb(247, 250, 252);
+    border:none;
+    border-radius:9999px;
+    padding:8px;
+    transition:all 300ms ease;
+    cursor:pointer;
+}
+
+.footer__social--link:hover{
+    background-color:rgb(203, 213, 224);
+}
+
+.footer__social--link-facebook{
+    margin-right:16px;
+}
+
+.footer__social--link-twitter{
+    margin-right:16px;
+}
+
 .fab{
     width:16px;
     height:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(26, 32, 44);
 }
